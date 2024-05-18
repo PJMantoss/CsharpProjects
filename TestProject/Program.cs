@@ -1,6 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
+Random random = new Random();
+int daysUntilExpiration = random.Next(12);
+int discountPercentage = 0;
+
+// Your code goes here
+
+if(daysUntilExpiration <= 10)
+{
+    Console.WriteLine("Your subscription will expire soon. Renew now!");
+}
+else if(daysUntilExpiration <= 20)
+{
+    Console.WriteLine("Your subscription expires in _ days.");
+    Console.WriteLine("Renew now and save 10%!");
+}
 
 // Dice Game
+/*
 Random dice = new Random();
 
 int roll1 = dice.Next(1, 7);
@@ -43,3 +59,4 @@ else
 {
     Console.WriteLine("You win a kitten!");
 }
+*/
