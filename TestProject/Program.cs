@@ -11,7 +11,10 @@ int x = 0;
 
 foreach (char i in charMessage) 
 { 
-    if (i == 'o') { x++; } 
+    if (i == 'o') 
+    { 
+        x++; 
+    } 
 }
 
 string new_message = new String(charMessage);
