@@ -1,10 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
-string[] fraudulentIDs = {"B123","C234","A345","C15","B177","G3003","C235","B179"};
+/*
+  The following code creates five random OrderIDs
+  to test the fraud detection process.  OrderIDs 
+  consist of a letter from A to E, and a three
+  digit number. Ex. A123.
+*/
+Random random = new Random();
+string[] orderIDs = new string[5];
 
-foreach (string fraudulentID in fraudulentIDs)
+for (int i = 0; i < orderIDs.Length; i++)
 {
-    if(fraudulentID.StartsWith("B"))
-    {
-        Console.WriteLine(fraudulentID);
-    }
+    int prefixValue = random.Next(65, 70);
+    string prefix = Convert.ToChar(prefixValue).ToString();
+    string suffix = random.Next(1, 1000).ToString("000");
+    orderIDs[i] = prefix + suffix;
+}
+
+foreach (var orderID in orderIDs)
+{
+    Console.WriteLine(orderID);
 }
