@@ -1,23 +1,35 @@
 ﻿// See https://aka.ms/new-console-template for more information
 /*The following code the message into characters, reverses them, count the o's,
 convert it back and print it out.*/
-string str = "The quick brown fox jumps over the lazy dog.";
+// Console.WriteLine("a" == "a");
+// Console.WriteLine("a" == "A");
+// Console.WriteLine(1 == 2);
 
-char[] charMessage = str.ToCharArray();
+// string myValue = "a";
+// Console.WriteLine(myValue == "a");
+// string value1 = " a";
+// string value2 = "A ";
 
-Array.Reverse(charMessage);
+// Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
 
-int x = 0;
+// Console.WriteLine("a" != "a");
+// Console.WriteLine("a" != "A");
+// Console.WriteLine(1 != 2);
 
-foreach (char i in charMessage) 
-{ 
-    if (i == 'o') 
-    { 
-        x++; 
-    } 
-}
+// string myValue = "a";
+// Console.WriteLine(myValue != "a");
 
-string new_message = new String(charMessage);
+// Console.WriteLine(1 > 2);
+// Console.WriteLine(1 < 2);
+// Console.WriteLine(1 >= 1);
+// Console.WriteLine(1 <= 1);
 
-Console.WriteLine(new_message);
-Console.WriteLine($"'o' appears {x} times.");
+// string pangram = "The quick brown fox jumps over the lazy dog.";
+// Console.WriteLine(pangram.Contains("fox"));
+// Console.WriteLine(pangram.Contains("cow"));
+// Console.WriteLine(!pangram.Contains("fox"));
+// Console.WriteLine(!pangram.Contains("cow"));
+
+int saleAmount = 1001;
+// int discount = saleAmount > 1000 ? 100 : 50;
+Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
