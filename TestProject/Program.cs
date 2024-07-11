@@ -275,7 +275,7 @@ Console.WriteLine("Enter an integer value between 5 and 10");
 do
 {
     userInput = Console.ReadLine();
-    
+
     if(userInput != null)
     {
         if (userInput >= 5 && userInput <= 10)
@@ -289,4 +289,6 @@ do
     }
 
     validNum = int.tryParse(userInput, out numericVal);
+
+    Console.WriteLine($"Your input value ({userInput}) has been accepted");
 } while(validNum == false);
