@@ -244,23 +244,45 @@ convert it back and print it out.*/
 // }
 // Console.WriteLine($"Last number: {current}");
 
-int hero = 10;
-int monster = 10;
+// int hero = 10;
+// int monster = 10;
 
-Random dice = new Random();
+// Random dice = new Random();
+
+// do
+// {
+//     int roll = dice.Next(1, 11);
+//     monster -= roll;
+//     Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health.");
+
+//     if(monster <= 0) continue;
+
+//     roll = dice.Next(1, 11);
+//     hero -= roll;
+//     Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health.");
+
+// } while (hero > 0 && monster > 0);
+
+// Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
+
+// Project I
+
+string? userInput;
+bool validNum = false
+Console.WriteLine("Enter an integer value between 5 and 10");
 
 do
 {
-    int roll = dice.Next(1, 11);
-    monster -= roll;
-    Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health.");
-
-    if(monster <= 0) continue;
-
-    roll = dice.Next(1, 11);
-    hero -= roll;
-    Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health.");
-
-} while (hero > 0 && monster > 0);
-
-Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
+    userInput = Console.ReadLine();
+    if(userInput != null)
+    {
+        if (userInput >= 5 && userInput <= 10)
+        {
+            validNum = true;
+        }
+        else
+        {
+            Console.WriteLine("Enter an integer value between 5 and 10");
+        }
+    }
+} while();
