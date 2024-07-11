@@ -268,6 +268,7 @@ convert it back and print it out.*/
 // Project I
 
 string? userInput;
+int numericVal = 0;
 bool validNum = false
 Console.WriteLine("Enter an integer value between 5 and 10");
 
@@ -285,4 +286,4 @@ do
             Console.WriteLine("Enter an integer value between 5 and 10");
         }
     }
-} while();
+} while(validNum == false);
