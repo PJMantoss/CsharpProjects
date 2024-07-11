@@ -287,7 +287,7 @@ do
 
     if(validNum == true)
     {
-        if (numericVal <= 5 || numericVal => 10)
+        if (numericVal <= 5 || numericVal >= 10)
         {
             validNum = false;
             Console.WriteLine($"You entered {numericVal}. Please enter a number between 5 and 10");
