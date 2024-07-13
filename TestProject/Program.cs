@@ -344,6 +344,17 @@ for (int i = 0; i < myStrings.Length; i++)
     while (periodLocation != null)
     {
         // first sentence is the string to the left of the period location
-        mySentence = myString.Remove(periodLocation, 1);
+        mySentence = myString.Remove(periodLocation);
+
+        //the remainder of myString is the string to the right of the period
+        myString = myString.Substring(periodLocation + 1);
+
+        //Remove any leading white space fom myString
+        myString = myString.TrimStart();
+
+        //Update the comma location and increment the counter
+        periodLocation = myString.IndexOf(".");
+
+        Console.WriteLine(mySentence);
     }
 }
