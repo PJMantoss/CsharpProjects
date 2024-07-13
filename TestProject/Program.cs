@@ -302,28 +302,30 @@ convert it back and print it out.*/
 // Console.WriteLine($"Your input value ({userInput}) has been accepted");
 
 // Prroject II
-string? userInput;
-string role = "";
-bool validNum = false;
+// string? userInput;
+// string role = "";
+// bool validNum = false;
 
-do
-{
-    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
-    userInput = Console.ReadLine();
-    if(userInput != null)
-    {
-        role = userInput.Trim();
-    }
+// do
+// {
+//     Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+//     userInput = Console.ReadLine();
+//     if(userInput != null)
+//     {
+//         role = userInput.Trim();
+//     }
 
-    if (role.ToLower() == "Administrator" || role.ToLower() == "Manager" ||  role.ToLower() == "User")
-    {
-        validNum = true;
-    }
-    else
-    {
-        Console.WriteLine($"The role name that you entered, \"{role}\" is not valid");
-    }
-} while(validNum == false);
+//     if (role.ToLower() == "administrator" || role.ToLower() == "manager" ||  role.ToLower() == "user")
+//     {
+//         validNum = true;
+//     }
+//     else
+//     {
+//         Console.WriteLine($"The role name that you entered, \"{role}\" is not valid");
+//     }
+// } while(validNum == false);
 
-Console.WriteLine($"Your input value ({role}) has been accepted");
-userInput = Console.ReadLine();
+// Console.WriteLine($"Your input value ({role}) has been accepted");
+// userInput = Console.ReadLine();
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
