@@ -267,65 +267,65 @@ convert it back and print it out.*/
 
 // Project I
 
-string? userInput;
-string valueEntered = "";
-int numericVal = 0;
-bool validNum = false;
-
-Console.WriteLine("Enter an integer value between 5 and 10");
-
-do
-{
-    userInput = Console.ReadLine();
-
-    if(userInput != null)
-    {
-        valueEntered = userInput;
-    }
-
-    validNum = int.TryParse(valueEntered, out numericVal);
-
-    if(validNum == true)
-    {
-        if (numericVal <= 5 || numericVal >= 10)
-        {
-            validNum = false;
-            Console.WriteLine($"You entered {numericVal}. Please enter a number between 5 and 10");
-        }
-    }
-    else
-    {
-        Console.WriteLine("Sorry, you entered an invalid number. Please try again.");
-    }
-} while(validNum == false);
-
-Console.WriteLine($"Your input value ({userInput}) has been accepted");
-
-// Prroject II
 // string? userInput;
-// string role = "Administrator|Manager|User"
-// // int numericVal = 0;
+// string valueEntered = "";
+// int numericVal = 0;
 // bool validNum = false;
-// Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+
+// Console.WriteLine("Enter an integer value between 5 and 10");
 
 // do
 // {
-//     userInput = Console.ReadLine().Trim().ToLower();
+//     userInput = Console.ReadLine();
 
 //     if(userInput != null)
 //     {
-//         if (role.Contains("Administrator" || "Manager" || "User"))
+//         valueEntered = userInput;
+//     }
+
+//     validNum = int.TryParse(valueEntered, out numericVal);
+
+//     if(validNum == true)
+//     {
+//         if (numericVal <= 5 || numericVal >= 10)
 //         {
-//             validNum = true;
+//             validNum = false;
+//             Console.WriteLine($"You entered {numericVal}. Please enter a number between 5 and 10");
 //         }
-//         else
-//         {
-//             Console.WriteLine("The role name that you entered, is not valid. Enter your role name (Administrator, Manager, or User)");
-//    Administrator");
-//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine("Sorry, you entered an invalid number. Please try again.");
 //     }
 // } while(validNum == false);
 
-// // validNum = int.tryParse(userInput, out numericVal);
-
 // Console.WriteLine($"Your input value ({userInput}) has been accepted");
+
+// Prroject II
+string? userInput;
+string role = "";
+// int numericVal = 0;
+bool validNum = false;
+Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+
+do
+{
+    userInput = Console.ReadLine().Trim().ToLower();
+
+    if(userInput != null)
+    {
+        if (role.Contains("Administrator" || "Manager" || "User"))
+        {
+            validNum = true;
+        }
+        else
+        {
+            Console.WriteLine("The role name that you entered, is not valid. Enter your role name (Administrator, Manager, or User)");
+   Administrator");
+        }
+    }
+} while(validNum == false);
+
+// validNum = int.tryParse(userInput, out numericVal);
+
+Console.WriteLine($"Your input value ({userInput}) has been accepted");
