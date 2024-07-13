@@ -304,12 +304,11 @@ convert it back and print it out.*/
 // Prroject II
 string? userInput;
 string role = "";
-// int numericVal = 0;
 bool validNum = false;
-Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
 
 do
 {
+    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
     userInput = Console.ReadLine().Trim().ToLower();
 
     if(userInput != null)
