@@ -341,7 +341,7 @@ for (int i = 0; i < myStrings.Length; i++)
     string mySentence;
 
     //extract sentences from each string and display them separately
-    while (periodLocation != null)
+    while (periodLocation != -1)
     {
         // first sentence is the string to the left of the period location
         mySentence = myString.Remove(periodLocation);
@@ -358,6 +358,6 @@ for (int i = 0; i < myStrings.Length; i++)
         Console.WriteLine(mySentence);
     }
 
-    myString = mySentence.Trim();
+    mySentence = myString.Trim();
     Console.WriteLine(mySentence);
 }
