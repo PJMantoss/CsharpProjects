@@ -329,9 +329,12 @@ convert it back and print it out.*/
 // userInput = Console.ReadLine();
 
 string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int stringsCount = myStrings.Length;
+string myString = "";
 int periodLocation = 0;
 
-for (string myString = 0; myString < myStrings.Length; myString++) 
+for (int i = 0; i < myStrings.Length; i++) 
 {
-    //
+    myString = myStrings[i];    
+    periodLocation = myString.IndexOf(".");
 }
