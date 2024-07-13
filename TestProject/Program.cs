@@ -310,18 +310,19 @@ do
 {
     Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
     userInput = Console.ReadLine().Trim().ToLower();
-
     if(userInput != null)
     {
-        if (role.Contains("Administrator" || "Manager" || "User"))
-        {
-            validNum = true;
-        }
-        else
-        {
-            Console.WriteLine("The role name that you entered, is not valid. Enter your role name (Administrator, Manager, or User)");
-   Administrator");
-        }
+        role = userInput.Trim();
+    }
+
+    if (role.ToLower() == "Administrator" || role.ToLower() == "Manager" ||  role.ToLower() == "User")
+    {
+        validNum = true;
+    }
+    else
+    {
+        Console.WriteLine("The role name that you entered, is not valid. Enter your role name (Administrator, Manager, or User)");
+Administrator");
     }
 } while(validNum == false);
 
