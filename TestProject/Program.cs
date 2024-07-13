@@ -357,4 +357,7 @@ for (int i = 0; i < myStrings.Length; i++)
 
         Console.WriteLine(mySentence);
     }
+
+    myString = mySentence.Trim();
+    Console.WriteLine(mySentence);
 }
