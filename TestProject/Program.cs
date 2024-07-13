@@ -309,7 +309,7 @@ bool validNum = false;
 do
 {
     Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
-    userInput = Console.ReadLine().Trim().ToLower();
+    userInput = Console.ReadLine();
     if(userInput != null)
     {
         role = userInput.Trim();
@@ -322,10 +322,8 @@ do
     else
     {
         Console.WriteLine($"The role name that you entered, \"{role}\" is not valid");
-Administrator");
     }
 } while(validNum == false);
 
-// validNum = int.tryParse(userInput, out numericVal);
-
-Console.WriteLine($"Your input value ({userInput}) has been accepted");
+Console.WriteLine($"Your input value ({role}) has been accepted");
+userInput = Console.ReadLine();
