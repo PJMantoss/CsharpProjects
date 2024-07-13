@@ -337,4 +337,9 @@ for (int i = 0; i < myStrings.Length; i++)
 {
     myString = myStrings[i];    
     periodLocation = myString.IndexOf(".");
+
+    string mySentence;
+
+    //extract sentences from each string and display them separately
+    
 }
