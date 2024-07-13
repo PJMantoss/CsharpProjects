@@ -321,7 +321,7 @@ do
     }
     else
     {
-        Console.WriteLine("The role name that you entered, is not valid. Enter your role name (Administrator, Manager, or User)");
+        Console.WriteLine($"The role name that you entered, \"{role}\" is not valid");
 Administrator");
     }
 } while(validNum == false);
